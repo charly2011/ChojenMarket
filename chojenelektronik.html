@@ -1,0 +1,670 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Chojen - E-commerce
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <div class="flex items-center space-x-4">
+      <a class="text-2xl font-bold text-orange-500" href="#">
+       Chojen
+      </a>
+      <a class="text-gray-700 hover:text-orange-500 font-semibold" href="#">
+       Home
+      </a>
+      <a class="text-gray-700 hover:text-orange-500 font-semibold" href="#flash-sale">
+       Flash Sale
+      </a>
+      <a class="text-gray-700 hover:text-orange-500 font-semibold" href="#products">
+       Products
+      </a>
+      <a class="text-gray-700 hover:text-orange-500 font-semibold" href="#contact">
+       Contact
+      </a>
+      <a class="text-gray-700 hover:text-orange-500 font-semibold" href="#social">
+       Social
+      </a>
+     </div>
+     <div class="relative">
+      <button class="relative text-gray-700 hover:text-orange-500 focus:outline-none" id="cart-button">
+       <i class="fas fa-shopping-cart fa-lg">
+       </i>
+       <span class="absolute -top-2 -right-2 bg-red-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center" id="cart-count">
+        0
+       </span>
+      </button>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <!-- Flash Sale Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6" id="flash-sale">
+   <h2 class="text-xl font-semibold text-gray-800 mb-4">
+    Flash Sale
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+    <!-- Flash Sale Product 1 -->
+    <div class="bg-white rounded-lg shadow-md p-3 flex flex-col">
+     <img alt="Wireless Earbuds black and silver with charging case on white background" class="w-full h-40 object-contain mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/7f40a98b-a691-400e-b338-26205e92d248.jpg" width="200"/>
+     <h3 class="text-sm font-semibold text-gray-800 truncate">
+      Wireless Earbuds
+     </h3>
+     <div class="flex items-center space-x-2 mt-1">
+      <span class="text-red-600 font-bold text-sm">
+       Rp 150.000
+      </span>
+      <span class="line-through text-gray-400 text-xs">
+       Rp 300.000
+      </span>
+     </div>
+     <span class="text-xs text-green-600 font-semibold mt-1">
+      50% OFF
+     </span>
+    </div>
+    <!-- Flash Sale Product 2 -->
+    <div class="bg-white rounded-lg shadow-md p-3 flex flex-col">
+     <img alt="Smart Watch with black strap and digital display on white background" class="w-full h-40 object-contain mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/ff6f86dd-d9d5-465d-ded4-ded480f68773.jpg" width="200"/>
+     <h3 class="text-sm font-semibold text-gray-800 truncate">
+      Smart Watch
+     </h3>
+     <div class="flex items-center space-x-2 mt-1">
+      <span class="text-red-600 font-bold text-sm">
+       Rp 350.000
+      </span>
+      <span class="line-through text-gray-400 text-xs">
+       Rp 700.000
+      </span>
+     </div>
+     <span class="text-xs text-green-600 font-semibold mt-1">
+      50% OFF
+     </span>
+    </div>
+    <!-- Flash Sale Product 3 -->
+    <div class="bg-white rounded-lg shadow-md p-3 flex flex-col">
+     <img alt="Portable Bluetooth Speaker black color with mesh front on white background" class="w-full h-40 object-contain mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/a4d87fc2-8e7c-47af-ec70-94030fafcab8.jpg" width="200"/>
+     <h3 class="text-sm font-semibold text-gray-800 truncate">
+      Bluetooth Speaker
+     </h3>
+     <div class="flex items-center space-x-2 mt-1">
+      <span class="text-red-600 font-bold text-sm">
+       Rp 120.000
+      </span>
+      <span class="line-through text-gray-400 text-xs">
+       Rp 240.000
+      </span>
+     </div>
+     <span class="text-xs text-green-600 font-semibold mt-1">
+      50% OFF
+     </span>
+    </div>
+    <!-- Flash Sale Product 4 -->
+    <div class="bg-white rounded-lg shadow-md p-3 flex flex-col">
+     <img alt="Gaming Mouse black with RGB lighting on white background" class="w-full h-40 object-contain mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/e8874a98-b5a4-4ae4-1937-70af557c9704.jpg" width="200"/>
+     <h3 class="text-sm font-semibold text-gray-800 truncate">
+      Gaming Mouse
+     </h3>
+     <div class="flex items-center space-x-2 mt-1">
+      <span class="text-red-600 font-bold text-sm">
+       Rp 180.000
+      </span>
+      <span class="line-through text-gray-400 text-xs">
+       Rp 360.000
+      </span>
+     </div>
+     <span class="text-xs text-green-600 font-semibold mt-1">
+      50% OFF
+     </span>
+    </div>
+    <!-- Flash Sale Product 5 -->
+    <div class="bg-white rounded-lg shadow-md p-3 flex flex-col">
+     <img alt="LED Desk Lamp with adjustable arm and white base on white background" class="w-full h-40 object-contain mb-2" height="200" src="https://storage.googleapis.com/a1aa/image/d8302deb-7ec5-400c-8024-819849f168c8.jpg" width="200"/>
+     <h3 class="text-sm font-semibold text-gray-800 truncate">
+      LED Desk Lamp
+     </h3>
+     <div class="flex items-center space-x-2 mt-1">
+      <span class="text-red-600 font-bold text-sm">
+       Rp 90.000
+      </span>
+      <span class="line-through text-gray-400 text-xs">
+       Rp 180.000
+      </span>
+     </div>
+     <span class="text-xs text-green-600 font-semibold mt-1">
+      50% OFF
+     </span>
+    </div>
+   </div>
+  </section>
+  <!-- Products Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 flex-grow" id="products">
+   <h2 class="text-xl font-semibold text-gray-800 mb-4">
+    Products
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Product 1 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Wireless Earbuds black and silver with charging case on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/7f40a98b-a691-400e-b338-26205e92d248.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Wireless Earbuds
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (4.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 150.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Wireless Earbuds', 150000, 'https://placehold.co/300x300/png?text=Wireless+Earbuds')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 2 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Smart Watch with black strap and digital display on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/ff6f86dd-d9d5-465d-ded4-ded480f68773.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Smart Watch
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (3.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 350.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Smart Watch', 350000, 'https://placehold.co/300x300/png?text=Smart+Watch')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 3 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Portable Bluetooth Speaker black color with mesh front on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/a4d87fc2-8e7c-47af-ec70-94030fafcab8.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Bluetooth Speaker
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="far fa-star">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (3.0)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 120.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Bluetooth Speaker', 120000, 'https://placehold.co/300x300/png?text=Bluetooth+Speaker')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 4 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Gaming Mouse black with RGB lighting on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/e8874a98-b5a4-4ae4-1937-70af557c9704.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Gaming Mouse
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (4.0)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 180.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Gaming Mouse', 180000, 'https://placehold.co/300x300/png?text=Gaming+Mouse')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 5 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="LED Desk Lamp with adjustable arm and white base on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/d8302deb-7ec5-400c-8024-819849f168c8.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      LED Desk Lamp
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+       <i class="far fa-star">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (2.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 90.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('LED Desk Lamp', 90000, 'https://placehold.co/300x300/png?text=LED+Desk+Lamp')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 6 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Portable Charger power bank black color with USB ports on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/47e17932-d89d-4520-0e05-7a9f128338ae.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Portable Charger
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (5.0)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 200.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Portable Charger', 200000, 'https://placehold.co/300x300/png?text=Portable+Charger')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 7 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Wireless Keyboard black slim design on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/040c9368-844a-4683-60a6-3284595aa40e.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Wireless Keyboard
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+       <i class="far fa-star">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (2.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 130.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Wireless Keyboard', 130000, 'https://placehold.co/300x300/png?text=Wireless+Keyboard')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 8 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="USB Flash Drive silver and black on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/ebf7d070-36e1-4f18-5039-00b67467bf46.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      USB Flash Drive
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (4.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 80.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('USB Flash Drive', 80000, 'https://placehold.co/300x300/png?text=USB+Flash+Drive')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 9 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Smartphone Holder black adjustable clamp on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/106d1a8c-3e0a-4633-dab1-a3b1f938e4eb.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Smartphone Holder
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+       <i class="far fa-star">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (2.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 70.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Smartphone Holder', 70000, 'https://placehold.co/300x300/png?text=Smartphone+Holder')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 10 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Electric Kettle stainless steel with black handle on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/7a46bc5d-c28b-43fb-b981-9813ce17497f.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Electric Kettle
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (5.0)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 250.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Electric Kettle', 250000, 'https://placehold.co/300x300/png?text=Electric+Kettle')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 11 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Hair Dryer white and pink color on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/79cac30a-26ae-463e-24c7-322ac8b361eb.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Hair Dryer
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+       <i class="far fa-star">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (2.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 180.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Hair Dryer', 180000, 'https://placehold.co/300x300/png?text=Hair+Dryer')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 12 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Electric Toothbrush white and blue color on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/bcdc2a22-0fc7-4d05-0f74-0efae1341189.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Electric Toothbrush
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (3.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 220.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Electric Toothbrush', 220000, 'https://placehold.co/300x300/png?text=Electric+Toothbrush')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 13 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Coffee Maker black with glass pot on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/29b96cd6-23ba-4789-00e8-043a6e60c798.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Coffee Maker
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (4.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 400.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Coffee Maker', 400000, 'https://placehold.co/300x300/png?text=Coffee+Maker')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 14 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Electric Fan white color with three blades on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/faab4d14-5d29-4cdf-1826-9012db9868e9.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Electric Fan
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star-half-alt">
+       </i>
+       <i class="far fa-star">
+       </i>
+       <i class="far fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (2.5)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 150.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Electric Fan', 150000, 'https://placehold.co/300x300/png?text=Electric+Fan')">
+      Add to Cart
+     </button>
+    </div>
+    <!-- Product 15 -->
+    <div class="bg-white rounded-lg shadow-md p-4 flex flex-col">
+     <img alt="Wireless Charger black round pad on white background" class="w-full h-48 object-contain mb-3" height="300" src="https://storage.googleapis.com/a1aa/image/fb6f44a4-db10-47e4-5bb2-626f5ba33ef9.jpg" width="300"/>
+     <h3 class="text-lg font-semibold text-gray-800 truncate">
+      Wireless Charger
+     </h3>
+     <div class="flex items-center mt-1 space-x-2">
+      <div class="flex text-yellow-400">
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+       <i class="fas fa-star">
+       </i>
+      </div>
+      <span class="text-sm text-gray-600">
+       (5.0)
+      </span>
+     </div>
+     <p class="text-red-600 font-bold text-lg mt-2">
+      Rp 180.000
+     </p>
+     <button class="mt-auto bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-md transition" onclick="addToCart('Wireless Charger', 180000, 'https://placehold.co/300x300/png?text=Wireless+Charger')">
+      Add to Cart
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 mb-10" id="contact">
+   <h2 class="text-xl font-semibold text-gray-800 mb-4">
+    Order via
+   </h2>
+   <div class="bg-white rounded-lg shadow-md p-6 flex flex-col sm:flex-row sm:justify-start sm:space-x-10 space-y-4 sm:space-y-0">
+    <div class="flex items-center space-x-3">
+     <i class="fas fa-phone-alt text-orange-500 text-2xl">
+     </i>
+     <a class="text-lg text-gray-700 hover:text-orange-500" href="tel:+6281234567890">
+      +62 812-3456-7890
+     </a>
+    </div>
+    <div class="flex items-center space-x-3">
+     <i class="fas fa-envelope text-orange-500 text-2xl">
+     </i>
+     <a class="text-lg text-gray-700 hover:text-orange-500" href="mailto:chojen.orders@gmail.com">
+      chojen.orders@gmail.com
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Social Section -->
+  <footer class="bg-white border-t border-gray-200 py-6" id="social">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+    <div class="flex items-center space-x-4">
+     <a class="flex items-center space-x-2 text-gray-700 hover:text-orange-500" href="https://www.tiktok.com/@lyzz2011" rel="noopener" target="_blank">
+      <img alt="TikTok logo black on white background" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/ccb6d6a8-44e6-4752-7fe2-697e8a416506.jpg" width="24"/>
+      <span>
+       tiktok: lyzz2011
+      </span>
+     </a>
+     <a class="flex items-center space-x-2 text-gray-700 hover:text-orange-500" href="https://www.instagram.com/charly11.4" rel="noopener" target="_blank">
+      <img alt="Instagram logo black on white background" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/c3502cdb-7316-4c32-8178-352ae13ce36b.jpg" width="24"/>
+      <span>
+       instagram: charly11.4
+      </span>
+     </a>
+    </div>
+    <div class="text-gray-500 text-sm">
+     © 2024 Chojen. All rights reserved.
+    </div>
+   </div>
+  </footer>
+  <script>
+   const cart = [];
+
+    function addToCart(name, price, image) {
+      cart.push({ name, price, image });
+      updateCartCount();
+      alert(`"${name}" telah ditambahkan ke keranjang.`);
+    }
+
+    function updateCartCount() {
+      const cartCount = document.getElementById('cart-count');
+      cartCount.textContent = cart.length;
+    }
+  </script>
+ </body>
+</html>
